@@ -11,7 +11,7 @@ def main():
 
     if st.button("検索ボリュームを取得"):
         url = 'https://ruri-co.biz-samurai.com'
-        keyword_scraper = KeywordScraper("yes")
+        keyword_scraper = KeywordScraper()
         all_data = keyword_scraper.scraping(url , main_keyword)
         df = pd.DataFrame(all_data)
         # CSVファイルのダウンロードボタンを表示
